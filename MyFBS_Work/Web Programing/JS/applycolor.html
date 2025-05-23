@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function applycss()
+        {
+            chk1=document.getElementById("chk1").checked
+            chk2=document.getElementById("chk2").checked
+            clr=document.getElementById("color").value
+            if(chk1==true)
+            {
+            document.getElementById("para").style.border = "2px solid"+clr
+            }
+            else
+            {
+                document.getElementById("para").style.border ="none"
+            }
+
+            if(chk2==true)
+            {
+            document.getElementById("para").style.color =clr
+            }
+            else
+            {
+                 document.getElementById("para").style.color ="black"
+            }
+        }
+    </script>
+</head>
+<body>
+    <p id="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia inventore, et maiores sit atque 
+        necessitatibus minus possimus consequatur animi veritatis nisi unde voluptate, reiciendis ratione 
+        hic recusandae quas? Excepturi est sunt vitae velit alias accusamus, ipsa magni nemo, dolor aut sit
+        totam doloremque maxime laborum tempore non, soluta delectus cum odio nulla distinctio quae odit esse
+        fuga? Harum, possimus asperiores. Odio, iste mollitia rem laboriosam sed libero deleniti nam 
+        
+    </p>
+
+    <input type="checkbox" id="chk1">Border
+    <input type="checkbox" id="chk2">Color
+    <br><br>
+
+    <input type="color" id="color">
+
+    <button onclick="applycss()">Apply</button>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function factorial()
+        {
+           no = parseInt(document.getElementById("inp").value)
+           fact=1
+           for(i=1; i<=no; i++)
+           {
+           fact=fact*i
+           }
+         
+           document.getElementById("res").innerHTML="Factorial of  "+no+" is " +fact
+        }
+
+    </script>
+</head>
+<body>
+    <h3> Enter a no. for finding factorial:</h3>
+    <input type="text" id="inp">
+    <button onclick="factorial()">Fact</button><br> <br>
+    <span id="res"></span>
+</body>
+</html>

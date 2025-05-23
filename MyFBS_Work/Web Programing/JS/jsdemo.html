@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addition()
+        {
+       inp1= document.getElementById("inp1");
+       inp2= document.getElementById("inp2");
+       no1=parseInt(inp1.value)
+       no2=parseInt(inp2.value)
+
+           res=no1+no2
+       
+       document.getElementById("res").innerHTML="Result is :"+res
+       }
+    </script>
+</head>
+<body>
+
+    No1<input type="text" id="inp1"><br>
+    No2<input type="text" id="inp2"><br><br>
+    <button onclick="addition()"> Add </button> <br><br>
+    
+    <span id="res"></span>
+
+</body>
+</html>
